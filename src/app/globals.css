@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base resets */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #ffffff;
+  color: #1E2A3A;
+}
+
+/* Textarea styling — browser default is ugly */
+textarea {
+  font-family: inherit;
+}
+
+/* Remove blue outline on focus — we use our own brand border */
+textarea:focus,
+button:focus {
+  outline: none;
+}
